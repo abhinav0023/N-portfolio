@@ -1,0 +1,148 @@
+{
+  "personalInfo": {
+    "name": "Neha Sindhwani",
+    "pronouns": "She/Her",
+    "headline": "Full Stack Developer | MERN & Java | AWS | CI/CD | Python | SQL & NoSQL | Docker | GenAI",
+    "location": "Gurugram, Haryana, India",
+    "contact": {
+      "phone": "+91-8053754232",
+      "email": "nehasindhwani01@gmail.com",
+      "linkedin": "https://linkedin.com/in/nehasindhwani01",
+      "github": "https://github.com/nehasindhwani01"
+    },
+    "about": "Computer Science undergraduate at Maharshi Dayanand University with hands-on experience as a Software Engineering Intern at Ruhil Future Technologies. Skilled in full stack development, cloud computing, and automation. Passionate about building scalable systems, optimizing workflows, and delivering efficient software solutions."
+  },
+  "skills": {
+    "languages": [
+      "Java",
+      "Python",
+      "JavaScript",
+      "SQL",
+      "HTML5",
+      "CSS3"
+    ],
+    "frontend": [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Bootstrap"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "JWT"
+    ],
+    "databases": [
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "Supabase"
+    ],
+    "devops": [
+      "AWS (EC2, ECS)",
+      "CI/CD Pipelines",
+      "Docker",
+      "n8n",
+      "Agile/Scrum"
+    ],
+    "cloud": ["AWS Cloud Computing", "Serverless Functions"],
+    "core_cs": [
+      "Data Structures & Algorithms",
+      "OOP",
+      "System Design",
+      "Database Design"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Software Engineering Intern",
+      "company": "Ruhil Future Technologies",
+      "duration": "July 2025 - Present",
+      "location": "Rohtak, Haryana, India",
+      "description": [
+        "Engineered a CRUD-based chatbot on MCP servers improving user interaction efficiency by 40%",
+        "Redesigned job board UI using React.js achieving 50% faster load time and 20% faster feature delivery",
+        "Built vital signs monitoring module enabling real-time tracking of 10+ health metrics for 200+ patients",
+        "Collaborated using Agile and Git workflows delivering features with 95%+ test coverage"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "SyncCall",
+      "type": "Full Stack",
+      "techStack": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "WebRTC",
+        "Socket.io"
+      ],
+      "description": [
+        "Developed video conferencing platform supporting 50+ concurrent users with 99.5% uptime",
+        "Implemented 20+ REST APIs and real-time socket events with sub-400ms latency",
+        "Designed responsive UI with 95%+ accuracy after testing 30+ edge cases"
+      ]
+    },
+    {
+      "name": "AI Finance Tracker",
+      "type": "Full Stack",
+      "techStack": [
+        "Next.js",
+        "PostgreSQL",
+        "Supabase",
+        "Clerk",
+        "Inngest",
+        "Tailwind CSS"
+      ],
+      "description": [
+        "Built AI-powered finance dashboard serving 50+ users with RBAC authentication",
+        "Automated insights using serverless functions and AI-generated summaries",
+        "Ensured 99.9% reliability using Clerk authentication and rate limiting"
+      ]
+    },
+    {
+      "name": "Wanderlust",
+      "type": "Full Stack",
+      "techStack": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "EJS",
+        "Bootstrap"
+      ],
+      "description": [
+        "Developed travel listing platform with full CRUD operations and authentication",
+        "Handled 100+ listings with advanced search features",
+        "Reduced errors by 60% using middleware validation and error handling"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Maharshi Dayanand University (MDU), Rohtak",
+      "degree": "B.Tech in Computer Science Engineering",
+      "duration": "Oct 2022 - Jun 2026",
+      "gpa": "8.2/10"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Technical & Events Coordinator",
+      "organization": "Vaish College of Engineering",
+      "duration": "Oct 2023 - Sep 2024",
+      "description": [
+        "Led team of 50+ students organizing workshops and coding contests with 200+ participants",
+        "Mentored teams in 5+ hackathons delivering projects within 24–48 hours"
+      ]
+    }
+  ],
+  "certifications": [
+    "AWS Cloud Computing",
+    "Walmart Advanced Software Engineering Simulation",
+    "AI-ML Industry Readiness",
+    "CodeQuest Excellence"
+  ]
+}
