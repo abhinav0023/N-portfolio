@@ -1,3 +1,4 @@
+import { ScrollProgress } from './components/ScrollProgress'
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
 import { About } from './sections/About'
@@ -13,6 +14,7 @@ import { Skills } from './sections/Skills'
 function App() {
   return (
     <div className="min-h-svh bg-background text-foreground">
+      <ScrollProgress />
       <SiteHeader />
       <main>
         <Hero />

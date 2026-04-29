@@ -17,24 +17,24 @@
   - [x] 2.1.1 Create `src/components/animations/ScrollReveal.tsx` file
   - [x] 2.1.2 Add file header with component description
 
-- [ ] 2.2 Define TypeScript interfaces
+- [x] 2.2 Define TypeScript interfaces
   - [x] 2.2.1 Define `ScrollRevealProps` interface with all props (children, delay, stagger, className, variants)
   - [x] 2.2.2 Define `AnimationVariants` type for custom variants
   - [x] 2.2.3 Define `Variant` type for animation states
   - [x] 2.2.4 Add JSDoc comments for all interface properties
 
-- [ ] 2.3 Implement reduced motion detection
-  - [ ] 2.3.1 Create `useReducedMotion` hook or inline detection logic
-  - [ ] 2.3.2 Check `window.matchMedia('(prefers-reduced-motion: reduce)')`
-  - [ ] 2.3.3 Add SSR safety check (`typeof window !== 'undefined'`)
-  - [ ] 2.3.4 Return boolean indicating motion preference
+- [x] 2.3 Implement reduced motion detection
+  - [x] 2.3.1 Create `useReducedMotion` hook or inline detection logic
+  - [x] 2.3.2 Check `window.matchMedia('(prefers-reduced-motion: reduce)')`
+  - [x] 2.3.3 Add SSR safety check (`typeof window !== 'undefined'`)
+  - [x] 2.3.4 Return boolean indicating motion preference
 
-- [ ] 2.4 Implement default animation variants
-  - [ ] 2.4.1 Create `getDefaultVariants` function accepting delay and stagger
-  - [ ] 2.4.2 Define hidden state: `{ opacity: 0, y: 40 }`
-  - [ ] 2.4.3 Define visible state: `{ opacity: 1, y: 0 }`
-  - [ ] 2.4.4 Configure transition: duration 0.6s, easeOut, with delay and staggerChildren
-  - [ ] 2.4.5 Return AnimationVariants object
+- [x] 2.4 Implement default animation variants
+  - [x] 2.4.1 Create `getDefaultVariants` function accepting delay and stagger
+  - [x] 2.4.2 Define hidden state: `{ opacity: 0, y: 40 }`
+  - [x] 2.4.3 Define visible state: `{ opacity: 1, y: 0 }`
+  - [x] 2.4.4 Configure transition: duration 0.6s, easeOut, with delay and staggerChildren
+  - [x] 2.4.5 Return AnimationVariants object
 
 - [ ] 2.5 Implement ScrollReveal component logic
   - [ ] 2.5.1 Import motion from framer-motion

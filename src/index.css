@@ -123,14 +123,14 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-33.333%);
     }
   }
 
   .marquee-row {
     display: flex;
     width: max-content;
-    animation: marquee-move 32s linear infinite;
+    animation: marquee-move 30s linear infinite;
   }
 
   @media (prefers-reduced-motion: reduce) {

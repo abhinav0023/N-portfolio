@@ -1,3 +1,4 @@
+import { ScrollReveal } from '../components/animations/ScrollReveal'
 import { Section } from '../components/ui/Section'
 import { profile } from '../data/profile'
 
@@ -9,11 +10,13 @@ export function About() {
       title="About"
       description="A quick snapshot of who I am and what I care about in my work."
     >
-      <div className="max-w-3xl rounded-xl border-2 border-foreground bg-card p-6 shadow-sticker md:p-8">
-        <p className="font-body text-base leading-relaxed text-foreground md:text-lg">
-          {profile.personalInfo.about}
-        </p>
-      </div>
+      <ScrollReveal>
+        <div className="max-w-3xl rounded-xl border-2 border-foreground bg-card p-6 shadow-sticker md:p-8">
+          <p className="font-body text-base leading-relaxed text-foreground md:text-lg">
+            {profile.personalInfo.about}
+          </p>
+        </div>
+      </ScrollReveal>
     </Section>
   )
 }

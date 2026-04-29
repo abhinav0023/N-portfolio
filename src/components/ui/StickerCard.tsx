@@ -1,4 +1,6 @@
 import type { ReactNode } from 'react'
+import { motion as Motion } from 'framer-motion'
+import { useReducedMotion } from '../../lib/useReducedMotion'
 
 type StickerCardProps = {
   title: string
@@ -17,12 +19,13 @@ export function StickerCard({
   icon,
   children,
 }: StickerCardProps) {
+  const reduced = useReducedMotion()
   const shadow = featured ? 'shadow-sticker-pink' : 'shadow-sticker'
 
-  return (
-    <article
-      className={`relative rounded-xl border-2 border-foreground bg-card p-6 pt-8 ${shadow} motion-safe-transition card-hover-wiggle md:p-8`}
-    >
+  const articleClass = `relative rounded-xl border-2 border-foreground bg-card p-6 pt-8 ${shadow} motion-safe-transition md:p-8`
+
+  const inner = (
+    <>
       {icon ? (
         <div
           className="absolute -top-5 left-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-foreground bg-quaternary text-foreground motion-safe-transition animate-wiggle-hover"
@@ -51,6 +54,19 @@ export function StickerCard({
           </div>
         ) : null}
       </div>
-    </article>
+    </>
+  )
+
+  if (reduced) {
+    return <article className={articleClass}>{inner}</article>
+  }
+
+  return (
+    <Motion.article
+      className={articleClass}
+      whileHover={{ y: -8, transition: { duration: 0.2 } }}
+    >
+      {inner}
+    </Motion.article>
   )
 }

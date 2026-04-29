@@ -1,3 +1,4 @@
+import { ScrollReveal } from '../components/animations/ScrollReveal'
 import { Section } from '../components/ui/Section'
 import { Chip } from '../components/ui/Chip'
 import { profile } from '../data/profile'
@@ -27,28 +28,30 @@ export function Skills() {
       title="Skills & tech stack"
       description="Grouped by how I use these tools day to day."
     >
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {entries.map((key, sectionIndex) => (
-          <div
-            key={key}
-            className="rounded-xl border-2 border-foreground bg-white p-6 shadow-sticker motion-safe-transition card-hover-wiggle"
-          >
-            <h3 className="font-heading text-lg font-extrabold text-foreground">
-              {labels[key]}
-            </h3>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {profile.skills[key].map((skill, i) => (
-                <Chip
-                  key={skill}
-                  tone={tones[(sectionIndex + i) % tones.length]}
-                >
-                  {skill}
-                </Chip>
-              ))}
+      <ScrollReveal className="overflow-x-hidden" direction="up">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {entries.map((key, sectionIndex) => (
+            <div
+              key={key}
+              className="rounded-xl border-2 border-foreground bg-white p-6 shadow-sticker motion-safe-transition card-hover-wiggle"
+            >
+              <h3 className="font-heading text-lg font-extrabold text-foreground">
+                {labels[key]}
+              </h3>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {profile.skills[key].map((skill, i) => (
+                  <Chip
+                    key={skill}
+                    tone={tones[(sectionIndex + i) % tones.length]}
+                  >
+                    {skill}
+                  </Chip>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </ScrollReveal>
     </Section>
   )
 }

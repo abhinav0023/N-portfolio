@@ -14,15 +14,15 @@ function track(items: string[], suffix: string) {
 }
 
 export function Marquee({ items }: MarqueeProps) {
-  const a = track(items, 'a')
-  const b = track(items, 'b')
-
   return (
     <div className="overflow-hidden border-y-2 border-foreground bg-white py-3">
       <div className="marquee-row">
-        <div className="flex items-center">{a}</div>
-        <div className="flex items-center" aria-hidden>
-          {b}
+        <div className="flex shrink-0 items-center">{track(items, 'a')}</div>
+        <div className="flex shrink-0 items-center" aria-hidden>
+          {track(items, 'b')}
+        </div>
+        <div className="flex shrink-0 items-center" aria-hidden>
+          {track(items, 'c')}
         </div>
       </div>
     </div>
